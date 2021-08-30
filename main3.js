@@ -108,7 +108,7 @@ var testim = document.getElementById("testim"),
     currentActive = 0,
     testimTimer
     ;
-// coding with nick
+
 window.onload = function () {
 
     // Testim Script

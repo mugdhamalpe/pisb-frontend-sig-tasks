@@ -89,6 +89,69 @@ section .title::after{
     transform: translateX(-50%);
 }
 
+/* navbar styling */
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+    background-color: rgba(0,0,0,1)!important;
+}
+.navbar.sticky{
+    padding: 15px 0;
+    background: rgb(220, 190, 20);
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .logo a span{
+    color: rgb(220, 190, 20);
+    transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span{
+    color: #fff;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    color: #fff;
+    font-size: 22px;
+    padding: 10px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: rgb(220, 190, 20);
+    text-decoration: none;
+}
+.navbar.sticky .menu li a:hover{
+    color: rgb(220, 190, 20);
+}
+
+/* menu btn styling */
+/* .menu-btn{
+    color: #fff;
+    font-size: 26px;
+    cursor: pointer;
+    display: none;
+} */
+.menu-btn .fa-bars{
+    float: right!important;
+}
 .menu-btn{
     color: #fff;
     font-size: 32px;
@@ -565,15 +628,15 @@ section .title::after{
     font-family: 'Poppins', sans-serif;
 
   }
-  #carousel .carousel-item.boat{
+  #carousel .carousel-item.page1{
     background-image:url("images/bg1.jpg");
 
   }
-  #carousel .carousel-item.sea{
+  #carousel .carousel-item.page2{
     background-image:url("images/bg2.jpg");
 
   }
-  #carousel .carousel-item.river{
+  #carousel .carousel-item.page3{
     background-image:url("images/bg3.jpg");
 
   }
@@ -1099,70 +1162,6 @@ border-color: rgb(220, 190, 20);
 
 }
 
-
-/* navbar styling */
-.navbar{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 999;
-    padding: 30px 0;
-    font-family: 'Ubuntu', sans-serif;
-    transition: all 0.3s ease;
-    background-color: rgba(0,0,0,1)!important;
-}
-.navbar.sticky{
-    padding: 15px 0;
-    background: rgb(220, 190, 20);
-}
-.navbar .max-width{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.navbar .logo a{
-    color: #fff;
-    font-size: 35px;
-    font-weight: 600;
-}
-.navbar .logo a span{
-    color: rgb(220, 190, 20);
-    transition: all 0.3s ease;
-}
-.navbar.sticky .logo a span{
-    color: #fff;
-}
-.navbar .menu li{
-    list-style: none;
-    display: inline-block;
-}
-.navbar .menu li a{
-    display: block;
-    color: #fff;
-    font-size: 22px;
-    padding: 10px;
-    font-weight: 500;
-    margin-left: 25px;
-    transition: color 0.3s ease;
-}
-.navbar .menu li a:hover{
-    color: rgb(220, 190, 20);
-    text-decoration: none;
-}
-.navbar.sticky .menu li a:hover{
-    color: rgb(220, 190, 20);
-}
-
-/* menu btn styling */
-.menu-btn{
-    color: #fff;
-    font-size: 26px;
-    cursor: pointer;
-    display: none;
-}
-.menu-btn .fa-bars{
-    float: right!important;
-}
 
 /* responsive media query start */
 @media (max-width: 1104px) {

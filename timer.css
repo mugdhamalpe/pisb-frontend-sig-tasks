@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+div{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(180deg,#F0C27B, #4B1248);
+}
+.playcard{
+    position: relative;
+    width: 700px;
+    height: 400px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255,255,255,0.2);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(5px);
+}
+h1{
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+h4{
+    font-size: 1.2rem;
+}
+h6{
+    text-align: center;
+}
+p{
+    height: 100px;
+    width: 600px;
+    background: rgba(0,0,0,0.3);
+    color: white;
+    text-align: center;
+    border-radius: 2rem;
+    /* box-shadow: 1rem 1rem 5rem black; */
+    font-size: 60px;
+    padding: 10px;
+}
+@media (min-width: 481px) and (max-width: 767px) {
+    .playcard{
+        width: 700px;
+        height: 300px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    p{
+        font-size: 28px;
+        width: 300px;
+        height: 50px;
+        padding-top: 20px;
+
+    }
+    h4{
+        font-size: 16px;
+    }
+    h6{
+        font-size: 13px;
+    }
+  }
+  @media (min-width: 320px) and (max-width: 480px){
+    div{
+        width: 375px;
+    }
+    .playcard{
+          text-align: center;
+          width: 300px;
+          height: 320px;
+    }
+    p{
+        width: 250px;
+        font-size: 25px;
+        padding-top: 35px;
+    }
+    h1{
+        font-size: 30px;
+    }
+  }
+  @media (min-width: 425px){
+      div{
+          width: 425px;
+      }
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+      div{
+          width: 1024px;
+          height: 1024px;
+      }
+      .playcard{
+          width: 500px;
+          height: 400px;
+      }
+      h1{
+          font-size: 32px;
+      }
+      h6{
+          font-size: 18px;
+      }
+      p{
+          padding-top: 60px;
+          font-size: 32px;
+          width: 320px;
+          height: 100px;
+      }
+  }
+  @media (min-width: 1025px) and (max-width: 1280px) {
+      div{
+          width: 1300px;
+      }
+  }
+  @media (min-width: 1281px){
+      div{
+          width: 1440px;
+      }
+  }
+  @media (min-width: 1024px){
+      div{
+          width: 1535px;
+      }
+
+  }

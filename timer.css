@@ -53,8 +53,11 @@ p{
     padding: 10px;
 }
 @media (min-width: 481px) and (max-width: 767px) {
+    div{
+        width: 685px!important;
+    }
     .playcard{
-        width: 700px;
+        width: 500px!important;
         height: 300px;
     }
     h1{
@@ -77,6 +80,7 @@ p{
   @media (min-width: 320px) and (max-width: 480px){
     div{
         width: 375px;
+        height: 810px;
     }
     .playcard{
           text-align: center;
